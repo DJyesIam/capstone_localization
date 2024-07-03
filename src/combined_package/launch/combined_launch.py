@@ -8,7 +8,7 @@ from ament_index_python.packages import get_package_share_directory
 def generate_launch_description():
 	gps_config_file = os.path.join(get_package_share_directory("nmea_navsat_driver"), "config", "nmea_serial_driver.yaml")
 	imu_config_file = os.path.join(get_package_share_directory('witmotion_ros'), 'config', 'wt901.yml')
-	localization_config_file = os.path.join(get_package_share_directory('robot_localization'), 'params', 'dual_ekf_navsat_example.yml')
+	localization_config_file = os.path.join(get_package_share_directory('robot_localization'), 'params', 'dual_ekf_navsat_example.yaml')
 	return LaunchDescription([
 		Node(
 			package='nmea_navsat_driver',
