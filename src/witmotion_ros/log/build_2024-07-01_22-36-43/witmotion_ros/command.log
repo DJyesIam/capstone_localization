@@ -1,0 +1,2 @@
+Invoking command in '/home/dj/workspace/witmotion_ros/src/build/witmotion_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dj/workspace/witmotion_ros/src -DCMAKE_INSTALL_PREFIX=/home/dj/workspace/witmotion_ros/src/install/witmotion_ros
+Invoked command in '/home/dj/workspace/witmotion_ros/src/build/witmotion_ros' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/dj/workspace/witmotion_ros/src -DCMAKE_INSTALL_PREFIX=/home/dj/workspace/witmotion_ros/src/install/witmotion_ros

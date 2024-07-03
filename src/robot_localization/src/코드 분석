@@ -1,0 +1,17 @@
+RCLCPP_INFO(this->get_logger(),"%d", has_transform_odom_);
+
+1. transformCallback() 함수에서 transform_good_이 false이면 true로 만들기 위해 computeTransform() 실행
+2. 해당 함수 내에서는 has_transform_odom_ && has_transform_gps_ && has_transform_imu_ 가 모두 true여야 함
+3. 그런데 지금 has_transform_imu_이 true가 아님. 얘는 imuCallback()에서 true로 만든다. 
+4. 해당 햄수 내에서는 can_transform 이라는 지역변수가 true여야 됨.
+5. 이 지역변수는 ros_filter_utilities::lookupTransformSafe() 함수의 결과로 반환값임
+
+map map                 x
+map odom                x
+map base_link           뜨긴 하는데 좀 이상
+odom map                x
+odom odom               x
+odom base_link          뜨긴 하는데 좀 이상
+base_link map
+base_link odom
+base_link base_link

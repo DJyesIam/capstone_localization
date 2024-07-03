@@ -1,0 +1,5 @@
+-I/home/dj/workspace/witmotion_ros/src/witmotion-uart-qt/include
+-I/home/dj/workspace/witmotion_ros/src/build/witmotion_ros/witmotion-uart-qt
+-o
+/home/dj/workspace/witmotion_ros/src/build/witmotion_ros/witmotion-uart-qt/include/witmotion/moc_wt31n-uart.cpp
+/home/dj/workspace/witmotion_ros/src/witmotion-uart-qt/include/witmotion/wt31n-uart.h
