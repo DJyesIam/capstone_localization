@@ -1,6 +1,6 @@
 nmea_navsat_driver:
   ros__parameters:
-    port: "/dev/ttyUSB0"
+    port: "/dev/ttyGPS"
     baud: 115200
     frame_id: "base_link"
     time_ref_source: "base_link"
