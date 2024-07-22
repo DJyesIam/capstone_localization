@@ -481,13 +481,13 @@ void ROSWitmotionSensorController::imu_process(
     return;
   }
   if (imu_enable_accel && imu_have_accel) {
-    msg.linear_acceleration.x = ax;
-    msg.linear_acceleration.y = ay;
+    msg.linear_acceleration.x = ay;
+    msg.linear_acceleration.y = ax;
     msg.linear_acceleration.z = az;
   }
   if (imu_enable_velocities && imu_have_velocities) {
-    msg.angular_velocity.x = wx;
-    msg.angular_velocity.y = wy;
+    msg.angular_velocity.x = -wy;
+    msg.angular_velocity.y = wx;
     msg.angular_velocity.z = wz;
   }
   if (imu_enable_orientation && imu_have_orientation) {
